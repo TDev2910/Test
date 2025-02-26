@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Practice_Day2_Mobishop.Models.Product>
+
+﻿<div class="container-fluid" style="padding: 0; margin: 0;">
+    <div class="banner">
+        <img src="~/Img/banner.jpg" alt="Banner" style="width: 100%; height: auto; display: block;">
+    </div>
+</div>
+
+<br />  
+<h2 class="text-center">Danh sách sản phẩm</h2>
+<br />
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card text-center shadow-sm">
+                <!-- Đưa hình ảnh vào giữa -->
+                <div class="d-flex justify-content-center align-items-center" style="height: 250px;">
+                    <img src="@product.Image" alt="@product.Name" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <p class="card-text text-danger font-weight-bold">
+                        @string.Format("{0:0,0} ₫", product.Price)
+                    </p>
+                    @* <p class="card-text"> *@
+                    @*     <del>@string.Format("{0:0,0} ₫", product.OriginalPrice)</del> *@
+                    @* </p> *@
+                    @* <p class="card-text text-info"> *@
+                    @*     Còn @product.Stock/@product.TotalStock suất *@
+                    @* </p> *@
+                    <form method="post" action="/Cart/AddToCart">
+                        <input type="hidden" name="productId" value="@product.Id" />
+                        <button type="submit" style="width: 40%; padding: 8px; margin-top: 10px; background-color: #28a745; color: white; border: none; cursor: pointer; border-radius: 5px;">
+                            Mua hàng
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,84 @@
+﻿@model Practice_Day2_Mobishop.Models.Product
+
+<div class="container mt-4">
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2 class="text-center mb-4">Thêm Thông Tin Sản Phẩm</h2>
+    <form asp-action="Create" method="post" onsubmit="return confirmSubmission();">
+        <div class="row">
+            <!-- Cột bên trái -->
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Tên sản phẩm</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Price" class="form-label">Giá (VND)</label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Image" class="form-label">Link ảnh sản phẩm</label>
+                    <input asp-for="Image" class="form-control" placeholder="Nhập URL ảnh" />
+                </div>
+                <div class="mb-2">
+                    <label asp-for="ShortDescription" class="form-label">Mô tả ngắn</label>
+                    <textarea asp-for="ShortDescription" class="form-control" rows="2"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="DetailedDescription" class="form-label">Mô tả dài</label>
+                    <textarea asp-for="DetailedDescription" class="form-control" rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- Cột bên phải -->
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label asp-for="Screen" class="form-label">Màn hình</label>
+                    <input asp-for="Screen" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="OS" class="form-label">Hệ điều hành</label>
+                    <input asp-for="OS" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Camera" class="form-label">Camera</label>
+                    <input asp-for="Camera" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="RAM" class="form-label">Ram</label>
+                    <input asp-for="RAM" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Storage" class="form-label">Bộ nhớ trong</label>
+                    <input asp-for="Storage" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Warranty" class="form-label">Thời gian bảo hành</label>
+                    <input asp-for="Warranty" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Nút Lưu và Hủy -->
+        <div class="d-flex justify-content-end mt-4">
+            <button type="submit" class="btn btn-primary me-2">Lưu</button>
+            <a href="/Product" class="btn btn-secondary">Hủy bỏ</a>
+        </div>
+    </form>
+</div>
+
+
+
+
+<!-- Đặt JavaScript ở cuối file -->
+@section Scripts
+{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+

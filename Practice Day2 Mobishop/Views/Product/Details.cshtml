@@ -1,0 +1,82 @@
+﻿@model Practice_Day2_Mobishop.Models.Product
+
+<div class="container mt-5">
+    <!-- Tên sản phẩm -->
+    <h1 class="text-center mb-4">@Model.Name</h1>
+
+    <!-- Ảnh sản phẩm -->
+    <div class="row">
+        <div class="col-md-6 offset-md-3 text-center">
+            <img src="@Model.Image" alt="@Model.Name" class="img-fluid rounded mb-4" />
+        </div>
+    </div>
+
+    <!-- Bảng thông số kỹ thuật -->
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h2 class="mb-3 text-center">Thông số kỹ thuật</h2>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th scope="row">Màn hình</th>
+                        <td>@Model.Screen</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Hệ điều hành</th>
+                        <td>@Model.OS</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Camera</th>
+                        <td>@Model.Camera</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">RAM</th>
+                        <td>@Model.RAM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bộ nhớ</th>
+                        <td>@Model.Storage</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bảo hành</th>
+                        <td>@Model.Warranty</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Cam kết của cửa hàng -->
+    <div class="row mt-4">
+        <div class="col-md-8 offset-md-2">
+            <h2 class="mb-3 text-center">Cửa Hàng Hùng FKT Xin Cam Kết</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="/Img/Transfer.png" alt="Đổi trả" style="width: 50px; height: 50px;" />
+                    <p>
+                        1 đổi 1 trong <strong>30 ngày</strong> với sản phẩm lỗi tại 2961 siêu thị toàn quốc.
+                        <a href="#" class="text-primary">Xem chi tiết</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/Img/Box.png" alt="Bộ sản phẩm" style="width: 50px; height: 50px;" />
+                    <p>
+                        Bộ sản phẩm gồm: Sách hướng dẫn, Hộp máy, Cáp Type C - Type A, Củ sạc rời đầu Type A.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/Img/Shield.png" alt="Bảo hành" style="width: 50px; height: 50px;" />
+                    <p>
+                        Bảo hành <strong>chính hãng 13 tháng</strong> tại các trung tâm bảo hành hãng.
+                        <a href="#" class="text-primary">Xem địa chỉ bảo hành</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nút quay lại -->
+    <div class="text-center mt-5">
+        <a href="/UpdateProduct" class="btn btn-primary">Quay lại trang sản phẩm</a>
+    </div>
+</div>

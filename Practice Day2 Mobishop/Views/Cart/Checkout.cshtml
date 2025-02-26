@@ -1,0 +1,46 @@
+﻿@model List<CartItem>
+
+<h2>Checkout</h2>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Tổng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Product.Price.ToString("C")</td>
+                    <td>@(item.Quantity * item.Product.Price).ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Tính tổng tiền giỏ hàng -->
+    <div class="total">
+        <h4>Tổng: @Model.Sum(x => x.Quantity * x.Product.Price).ToString("C")</h4>
+    </div>
+
+    <!-- Form để gửi dữ liệu giỏ hàng tới trang PlaceOrder -->
+    <form method="post" action="@Url.Action("Index", "PlaceOrder")">
+        @foreach (var item in Model)
+        {
+            <input type="hidden" name="cartItems[@item.Product.Id].Quantity" value="@item.Quantity" />
+        }
+        <button type="submit" class="btn btn-success">Xác nhận đặt hàng</button>
+    </form>
+}
+else
+{
+    <p>Giỏ hàng của bạn đang trống.</p>
+}

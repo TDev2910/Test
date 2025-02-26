@@ -1,0 +1,85 @@
+﻿@model OrderModel
+
+<h2 style="text-align: center; font-weight: bold; color: #e10600;">THÔNG TIN ĐƠN HÀNG</h2>
+
+<div style="display: flex; justify-content: space-between;">
+    <!-- Thông tin đơn hàng -->
+    <div style="width: 60%; padding: 20px;">
+        <h3>GIAO HÀNG ĐẾN</h3>
+        <form method="post" action="@Url.Action("ConfirmOrder", "PlaceOrder")">
+            <div style="margin-bottom: 10px;">
+                <label for="Name" style="font-weight: bold;">Tên *</label>
+                <input type="text" id="Name" name="Name" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="Address" style="font-weight: bold;">Địa chỉ *</label>
+                <input type="text" id="Address" name="Address" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="Phone" style="font-weight: bold;">Số điện thoại *</label>
+                <input type="text" id="Phone" name="Phone" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="Email" style="font-weight: bold;">E-mail *</label>
+                <input type="email" id="Email" name="Email" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+            </div>
+
+            <!-- Phương thức vận chuyển -->
+            <h4 style="font-weight: bold;">PHƯƠNG THỨC VẬN CHUYỂN</h4>
+            <div style="margin-bottom: 15px;">
+                <label style="display: flex; align-items: center;">
+                    <input type="radio" name="shippingMethod" value="giao_hang_tan_noi" checked> Giao hàng tận nơi
+                </label>
+                <label style="display: flex; align-items: center;">
+                    <input type="radio" name="shippingMethod" value="hen_lay_tai_cua_hang"> Hẹn lấy tại cửa hàng
+                </label>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="City" style="font-weight: bold;">Tỉnh thành *</label>
+                <select id="City" name="City" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+                    <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="Store" style="font-weight: bold;">Cửa hàng *</label>
+                <select id="Store" name="Store" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+                    <option value="Cửa hàng 1">Cửa hàng 1</option>
+                    <option value="Cửa hàng 2">Cửa hàng 2</option>
+                    <option value="Cửa hàng 3">Cửa hàng 3</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="Notes" style="font-weight: bold;">Ghi chú</label>
+                <textarea id="Notes" name="Notes" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
+                <button type="button" style="background-color: #ccc; padding: 10px 20px; border: none; border-radius: 5px;">
+                    Trở lại
+                </button>
+                <button type="submit" style="background-color: #e10600; padding: 10px 20px; color: white; border: none; border-radius: 5px;">
+                    Tiếp theo
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Chi tiết đơn hàng -->
+    <div style="width: 35%; padding: 20px; background-color: #f8f9fa; border-radius: 5px;">
+        <h3 style="font-weight: bold;">CHI TIẾT ĐƠN HÀNG</h3>
+        <div style="margin-bottom: 20px;">
+            <p><strong>Sản phẩm:</strong> CÙNG BEE MIX & MATCH 3</p>
+            <p><strong>Số lượng:</strong> 1</p>
+            <p><strong>Giá:</strong> 81,000 đ</p>
+        </div>
+        <hr>
+        <div>
+            <p><strong>Tổng cộng:</strong> 81,000 đ</p>
+        </div>
+    </div>
+</div>

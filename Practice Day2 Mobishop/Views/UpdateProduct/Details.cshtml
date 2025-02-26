@@ -1,0 +1,23 @@
+﻿@model Practice_Day2_Mobishop.Models.Product
+
+<div class="container mt-5">
+    <h1 class="text-center">@Model.Name</h1>
+
+    <!-- Căn giữa hình ảnh -->
+    <div class="d-flex justify-content-center mt-3">
+        <img src="@Model.Image" alt="@Model.Name" class="img-fluid rounded" style="max-width: 300px;" />
+    </div>
+
+    <table class="table mt-4">
+        <tr><th>Màn hình</th><td>@Model.Screen</td></tr>
+        <tr><th>Hệ điều hành</th><td>@Model.OS</td></tr>
+        <tr><th>Camera</th><td>@Model.Camera</td></tr>
+        <tr><th>RAM</th><td>@Model.RAM</td></tr>
+        <tr><th>Mô tả ngắn </th><td>@Model.ShortDescription</td></tr>
+        <tr><th>Mô tả dài</th><td>@Model.DetailedDescription</td></tr>
+        <tr><th>Bộ nhớ</th><td>@Model.Storage</td></tr>
+        <tr><th>Bảo hành</th><td>@Model.Warranty</td></tr>
+    </table>
+
+    <a href="/UpdateProduct" class="btn btn-primary mt-3">Quay lại</a>
+</div>

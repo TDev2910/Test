@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\Asp.net\\PhamChiTrong_AspNetCore_Tuan2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02A93F-7B68-4FBC-917E-409809946F9D}|Practice Day2 Mobishop\\Practice Day2 Mobishop.csproj|d:\\c#\\asp.net\\phamchitrong_aspnetcore_tuan2\\practice day2 mobishop\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E02A93F-7B68-4FBC-917E-409809946F9D}|Practice Day2 Mobishop\\Practice Day2 Mobishop.csproj|solutionrelative:practice day2 mobishop\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02A93F-7B68-4FBC-917E-409809946F9D}|Practice Day2 Mobishop\\Practice Day2 Mobishop.csproj|d:\\c#\\asp.net\\phamchitrong_aspnetcore_tuan2\\practice day2 mobishop\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E02A93F-7B68-4FBC-917E-409809946F9D}|Practice Day2 Mobishop\\Practice Day2 Mobishop.csproj|solutionrelative:practice day2 mobishop\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02A93F-7B68-4FBC-917E-409809946F9D}|Practice Day2 Mobishop\\Practice Day2 Mobishop.csproj|d:\\c#\\asp.net\\phamchitrong_aspnetcore_tuan2\\practice day2 mobishop\\views\\listproduct\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E02A93F-7B68-4FBC-917E-409809946F9D}|Practice Day2 Mobishop\\Practice Day2 Mobishop.csproj|solutionrelative:practice day2 mobishop\\views\\listproduct\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C#\\Asp.net\\PhamChiTrong_AspNetCore_Tuan2\\Practice Day2 Mobishop\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Practice Day2 Mobishop\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\C#\\Asp.net\\PhamChiTrong_AspNetCore_Tuan2\\Practice Day2 Mobishop\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Practice Day2 Mobishop\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T09:30:26.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\C#\\Asp.net\\PhamChiTrong_AspNetCore_Tuan2\\Practice Day2 Mobishop\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "Practice Day2 Mobishop\\Views\\Product\\Details.cshtml",
+              "ToolTip": "D:\\C#\\Asp.net\\PhamChiTrong_AspNetCore_Tuan2\\Practice Day2 Mobishop\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "Practice Day2 Mobishop\\Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T09:30:22.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C#\\Asp.net\\PhamChiTrong_AspNetCore_Tuan2\\Practice Day2 Mobishop\\Views\\ListProduct\\Index.cshtml",
+              "RelativeDocumentMoniker": "Practice Day2 Mobishop\\Views\\ListProduct\\Index.cshtml",
+              "ToolTip": "D:\\C#\\Asp.net\\PhamChiTrong_AspNetCore_Tuan2\\Practice Day2 Mobishop\\Views\\ListProduct\\Index.cshtml",
+              "RelativeToolTip": "Practice Day2 Mobishop\\Views\\ListProduct\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T09:29:35.733Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
